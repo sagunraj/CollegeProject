@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\AdminRequest;
 use App\ImageModel;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 use Intervention\Image\Facades\Image;
 
 class AdminController extends Controller
@@ -40,39 +42,39 @@ class AdminController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(AdminRequest $request)
     {
-        $client = new Client();
+        if ($request != null) {
+            $client = new Client();
 
-        $imageModel = new ImageModel();
-        $file = $request->file('image');
-        $filename = time().'.'.$file->getClientOriginalExtension();
-        $textfilename = time().'.txt';
-        $location = public_path('images/'.$filename);
-        Image::make($file)->save($location);
-        $fileData = fopen($location, 'r');
-        $imageModel->image = $filename;
-        $imageModel->textfile = $textfilename;
-        $imageModel->save();
+            $imageModel = new ImageModel();
+            $file = $request->file('image');
+            $filename = time() . '.' . $file->getClientOriginalExtension();
+            $location = public_path('images/' . $filename);
+            Image::make($file)->save($location);
+            $fileData = fopen($location, 'r');
+            $imageModel->image = $filename;
 
-        $request = $client->request('POST', "https://api.ocr.space/parse/image", [
-            'headers' => ['apikey' => '9cbdb738d088957'],
-            'multipart' => [
+
+            $request = $client->request('POST', "https://api.ocr.space/parse/image", [
+                'headers' => ['apikey' => '9cbdb738d088957'],
+                'multipart' => [
+                    [
+                        'name' => 'file',
+                        'contents' => $fileData
+                    ]
+                ]
+            ],
                 [
-                'name' => 'file',
-                'contents' => $fileData
-            ]
-            ]
-        ],
-            [
-            'file' => $fileData
-        ]);
+                    'file' => $fileData
+                ]);
 
-        $response= json_decode($request->getBody(), true);
-
-        dd($response);
-
-        return redirect()->route('admin.upload');
+            $response = json_decode($request->getBody());
+            $imageModel->text = $response->ParsedResults[0]->ParsedText;
+            $imageModel->save();
+            Session::flash("uploaded", "Your image has been uploaded and stored.");
+            return redirect()->route('admin.upload');
+        }
     }
 
     /**
