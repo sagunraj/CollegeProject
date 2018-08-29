@@ -4,9 +4,11 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\AdminRequest;
 use App\ImageModel;
+use App\WordIndex;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
+use Imagick;
 use Intervention\Image\Facades\Image;
 
 class AdminController extends Controller
@@ -23,7 +25,7 @@ class AdminController extends Controller
 
     public function index()
     {
-        //
+
     }
 
     /**
@@ -44,6 +46,17 @@ class AdminController extends Controller
      */
     public function store(AdminRequest $request)
     {
+       /* try {
+            $imagick = new \Imagick(realpath($request->file('image')));
+        } catch (\ImagickException $e) {
+        }
+        for($y=0; $y<$imagick->getImageWidth(); $y++) {
+            for ($x = 0; $x < $imagick->getImageHeight(); $x++) {
+                $pixels = $imagick->exportImagePixels($x, $y, $imagick->getImageWidth(), $imagick->getImageHeight(), "RGB", Imagick::PIXEL_CHAR);
+            }
+            dd($pixels);
+        }*/
+
         if ($request != null) {
             $client = new Client();
 
@@ -71,11 +84,21 @@ class AdminController extends Controller
 
             $response = json_decode($request->getBody());
             $imageModel->text = $response->ParsedResults[0]->ParsedText;
+            $textdata = $response->ParsedResults[0]->ParsedText;
+            $newtextdata = preg_split("/[\s,]+/", $textdata);
+
+            for($i=0; $i<=sizeof($newtextdata)-1; $i++){
+                    $wordindex = new WordIndex();
+                    $wordindex->word = $newtextdata[$i];
+                    $wordindex->imagename = $filename;
+                    $wordindex->save();
+            }
+
             $imageModel->save();
             Session::flash("uploaded", "Your image has been uploaded and stored.");
             return redirect()->route('admin.upload');
+            }
         }
-    }
 
     /**
      * Display the specified resource.
@@ -121,4 +144,6 @@ class AdminController extends Controller
     {
         //
     }
+
+
 }
