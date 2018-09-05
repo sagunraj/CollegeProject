@@ -57,8 +57,6 @@ class SearchController extends Controller
       $newkeywords[0] = $queryString;
         if((sizeof($keywords))>1) {
             for ($i = 1; $i <= sizeof($keywords)-1; $i++) {
-
-//                dd(sizeof($keywords));
                 if($i>5){ break; }
                 if ($keywords[$i] != $queryString) {
                     array_push($newkeywords, $keywords[$i]);
@@ -75,8 +73,6 @@ class SearchController extends Controller
                 if ($dv >= 0.6) {
                     $count++;
                     array_push($diceResults, $indices[$m]->imagename);
-//                    if($count>0)
-//                        break;
                 }
             }
         }

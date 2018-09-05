@@ -46,17 +46,6 @@ class AdminController extends Controller
      */
     public function store(AdminRequest $request)
     {
-       /* try {
-            $imagick = new \Imagick(realpath($request->file('image')));
-        } catch (\ImagickException $e) {
-        }
-        for($y=0; $y<$imagick->getImageWidth(); $y++) {
-            for ($x = 0; $x < $imagick->getImageHeight(); $x++) {
-                $pixels = $imagick->exportImagePixels($x, $y, $imagick->getImageWidth(), $imagick->getImageHeight(), "RGB", Imagick::PIXEL_CHAR);
-            }
-            dd($pixels);
-        }*/
-
         if ($request != null) {
             $client = new Client();
 

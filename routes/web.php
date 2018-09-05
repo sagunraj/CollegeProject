@@ -11,11 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/search', 'SearchController@index')->name('search.index');
+
+Route::get('/', 'SearchController@index')->name('search.index');
 Route::get('/upload', 'AdminController@upload')->name('admin.upload');
 Route::post('/upload', 'AdminController@store')->name('admin.store');
 
 Route::get('/search/query', 'SearchController@store')->name('search.store');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
