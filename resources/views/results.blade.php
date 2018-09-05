@@ -4,9 +4,9 @@
     @endsection
 @section('content')
     <h2>Search Results for '{!! $queryString !!}'</h2>
-    @foreach($imageModel as $image)
+    @foreach($finalResults as $finalResult)
         <ul>
-            <li style="list-style-type: none;"><img src="{!! asset('images/'.$image->image) !!}"/></li>
+            <li style="list-style-type: none;"><img src="{!! asset('images/'.$finalResult) !!}"/></li>
         </ul>
     @endforeach
 @endsection
