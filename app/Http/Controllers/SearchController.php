@@ -54,7 +54,7 @@ class SearchController extends Controller
         $synsn = str_replace("=>", " ", $synsn);
 
         $keywords = preg_split("/[\s,]+/", $synsn);
-      $newkeywords[0] = $queryString;
+        $newkeywords[0] = $queryString;
         if((sizeof($keywords))>1) {
             for ($i = 1; $i <= sizeof($keywords)-1; $i++) {
                 if($i>5){ break; }
@@ -63,6 +63,7 @@ class SearchController extends Controller
                 }
             }
         }
+
         $diceResults = array();
 
         $indices = json_decode(WordIndex::all());
@@ -70,7 +71,7 @@ class SearchController extends Controller
         for($l=0; $l <= sizeof($newkeywords)-1; $l++) {
             for ($m = 0; $m <= sizeof($indices) - 1; $m++) {
                 $dv = $this->diceCoefficient($newkeywords[$l], $indices[$m]->word);
-                if ($dv >= 0.6) {
+                if ($dv >= 0.5) {
                     $count++;
                     array_push($diceResults, $indices[$m]->imagename);
                 }
@@ -85,10 +86,15 @@ class SearchController extends Controller
             }
         }
 
+        if($finalResults!=null){
         return view('results', [
             'finalResults' => $finalResults,
             'queryString' => $queryString
-        ]);
+        ]);}
+
+        else{
+            return view('noresults');
+        }
 
     }
 

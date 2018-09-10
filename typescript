@@ -1,0 +1,545 @@
+Script started on 2018-09-10 16:48:21+0545
+]0;sagunraj@Inspiron3542: ~/LaravelSites/CollegeProject[01;32msagunraj@Inspiron3542[00m:[01;34m~/LaravelSites/CollegeProject[00m$ npm run dev
+
+> @ dev /home/sagunraj/LaravelSites/CollegeProject
+> npm run development
+
+
+> @ development /home/sagunraj/LaravelSites/CollegeProject
+> cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js
+
+events.js:165
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: spawn node_modules/webpack/bin/webpack.js ENOENT
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:201:19)
+    at onErrorNT (internal/child_process.js:379:16)
+    at process._tickCallback (internal/process/next_tick.js:114:19)
+    at Function.Module.runMain (module.js:692:11)
+    at startup (bootstrap_node.js:194:16)
+    at bootstrap_node.js:666:3
+Emitted 'error' event at:
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:207:12)
+    at onErrorNT (internal/child_process.js:379:16)
+    [... lines matching original stack trace ...]
+    at bootstrap_node.js:666:3
+[37;40mnpm[0m [0m[31;40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37;40mnpm[0m [0m[31;40mERR![0m [0m[35merrno[0m 1
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m @ development: `cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js`
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Exit status 1
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m 
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Failed at the @ development script.
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m This is probably not a problem with npm. There is likely additional logging output above.
+[0m[37;40mnpm[0m [0m[30;43mWARN[0m[35m[0m Local package.json exists, but node_modules missing, did you mean to install?
+[0m
+[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m A complete log of this run can be found in:
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m     /home/sagunraj/.npm/_logs/2018-09-10T11_04_18_025Z-debug.log
+[0m[37;40mnpm[0m [0m[31;40mERR![0m [0m[35mcode[0m ELIFECYCLE
+[0m[37;40mnpm[0m [0m[31;40mERR![0m [0m[35merrno[0m 1
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m @ dev: `npm run development`
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Exit status 1
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m 
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m Failed at the @ dev script.
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m This is probably not a problem with npm. There is likely additional logging output above.
+[0m[37;40mnpm[0m [0m[30;43mWARN[0m[35m[0m Local package.json exists, but node_modules missing, did you mean to install?
+[0m
+[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m A complete log of this run can be found in:
+[0m[37;40mnpm[0m [0m[31;40mERR![0m[35m[0m     /home/sagunraj/.npm/_logs/2018-09-10T11_04_18_078Z-debug.log
+[0m]0;sagunraj@Inspiron3542: ~/LaravelSites/CollegeProject[01;32msagunraj@Inspiron3542[00m:[01;34m~/LaravelSites/CollegeProject[00m$ npm run dev[6Pmssqlphp artisan serve
+[32mLaravel development server started:[39m <http://127.0.0.1:8000>
+[Mon Sep 10 16:52:55 2018] 127.0.0.1:57336 [200]: /css/modal.css
+[Mon Sep 10 16:52:55 2018] 127.0.0.1:57340 [200]: /js/app.js
+[Mon Sep 10 16:52:55 2018] 127.0.0.1:57342 [200]: /css/app.css
+[Mon Sep 10 16:52:55 2018] 127.0.0.1:57344 [200]: /images/1536131224.png
+[Mon Sep 10 16:52:55 2018] 127.0.0.1:57346 [200]: /images/1536131295.png
+[Mon Sep 10 16:52:55 2018] 127.0.0.1:57348 [200]: /images/1536131428.png
+[Mon Sep 10 16:52:55 2018] 127.0.0.1:57350 [200]: /images/1536131585.png
+[Mon Sep 10 16:52:55 2018] 127.0.0.1:57352 [200]: /favicon.ico
+[Mon Sep 10 17:03:14 2018] 127.0.0.1:57512 [200]: /css/modal.css
+[Mon Sep 10 17:03:14 2018] 127.0.0.1:57518 [200]: /js/app.js
+[Mon Sep 10 17:03:14 2018] 127.0.0.1:57520 [200]: /css/app.css
+[Mon Sep 10 17:03:14 2018] 127.0.0.1:57522 [200]: /images/1536131224.png
+[Mon Sep 10 17:03:14 2018] 127.0.0.1:57524 [200]: /images/1536131295.png
+[Mon Sep 10 17:03:14 2018] 127.0.0.1:57526 [200]: /images/1536131428.png
+[Mon Sep 10 17:03:14 2018] 127.0.0.1:57528 [200]: /images/1536131585.png
+[Mon Sep 10 17:03:14 2018] 127.0.0.1:57532 [200]: /favicon.ico
+[Mon Sep 10 17:03:48 2018] 127.0.0.1:57542 [200]: /css/modal.css
+[Mon Sep 10 17:03:48 2018] 127.0.0.1:57548 [200]: /js/app.js
+[Mon Sep 10 17:03:48 2018] 127.0.0.1:57552 [200]: /images/1536131224.png
+[Mon Sep 10 17:03:48 2018] 127.0.0.1:57550 [200]: /css/app.css
+[Mon Sep 10 17:03:48 2018] 127.0.0.1:57554 [200]: /images/1536131295.png
+[Mon Sep 10 17:03:48 2018] 127.0.0.1:57556 [200]: /images/1536131428.png
+[Mon Sep 10 17:03:48 2018] 127.0.0.1:57558 [200]: /images/1536131585.png
+[Mon Sep 10 17:03:48 2018] 127.0.0.1:57564 [200]: /favicon.ico
+[Mon Sep 10 17:03:55 2018] 127.0.0.1:57570 [200]: /css/modal.css
+[Mon Sep 10 17:03:55 2018] 127.0.0.1:57574 [200]: /js/app.js
+[Mon Sep 10 17:03:55 2018] 127.0.0.1:57576 [200]: /css/app.css
+[Mon Sep 10 17:03:55 2018] 127.0.0.1:57578 [200]: /images/1536131224.png
+[Mon Sep 10 17:03:55 2018] 127.0.0.1:57580 [200]: /images/1536131295.png
+[Mon Sep 10 17:03:55 2018] 127.0.0.1:57582 [200]: /images/1536131428.png
+[Mon Sep 10 17:03:55 2018] 127.0.0.1:57584 [200]: /images/1536131585.png
+[Mon Sep 10 17:03:56 2018] 127.0.0.1:57586 [200]: /favicon.ico
+[Mon Sep 10 17:06:31 2018] 127.0.0.1:57606 [200]: /css/modal.css
+[Mon Sep 10 17:06:31 2018] 127.0.0.1:57612 [200]: /js/app.js
+[Mon Sep 10 17:06:31 2018] 127.0.0.1:57614 [200]: /css/app.css
+[Mon Sep 10 17:06:31 2018] 127.0.0.1:57616 [200]: /images/1536131224.png
+[Mon Sep 10 17:06:32 2018] 127.0.0.1:57618 [200]: /images/1536131295.png
+[Mon Sep 10 17:06:32 2018] 127.0.0.1:57620 [200]: /images/1536131428.png
+[Mon Sep 10 17:06:32 2018] 127.0.0.1:57622 [200]: /images/1536131585.png
+[Mon Sep 10 17:06:32 2018] 127.0.0.1:57626 [200]: /favicon.ico
+[Mon Sep 10 17:06:58 2018] 127.0.0.1:57634 [200]: /css/modal.css
+[Mon Sep 10 17:06:58 2018] 127.0.0.1:57640 [200]: /js/app.js
+[Mon Sep 10 17:06:58 2018] 127.0.0.1:57642 [200]: /css/app.css
+[Mon Sep 10 17:06:58 2018] 127.0.0.1:57644 [200]: /images/1536131224.png
+[Mon Sep 10 17:06:58 2018] 127.0.0.1:57646 [200]: /images/1536131295.png
+[Mon Sep 10 17:06:58 2018] 127.0.0.1:57648 [200]: /images/1536131428.png
+[Mon Sep 10 17:06:58 2018] 127.0.0.1:57650 [200]: /images/1536131585.png
+[Mon Sep 10 17:06:58 2018] 127.0.0.1:57654 [200]: /favicon.ico
+[Mon Sep 10 17:06:59 2018] 127.0.0.1:57658 [200]: /css/modal.css
+[Mon Sep 10 17:06:59 2018] 127.0.0.1:57662 [200]: /js/app.js
+[Mon Sep 10 17:06:59 2018] 127.0.0.1:57664 [200]: /css/app.css
+[Mon Sep 10 17:06:59 2018] 127.0.0.1:57666 [200]: /images/1536131224.png
+[Mon Sep 10 17:06:59 2018] 127.0.0.1:57668 [200]: /images/1536131295.png
+[Mon Sep 10 17:06:59 2018] 127.0.0.1:57670 [200]: /images/1536131428.png
+[Mon Sep 10 17:06:59 2018] 127.0.0.1:57672 [200]: /images/1536131585.png
+[Mon Sep 10 17:06:59 2018] 127.0.0.1:57674 [200]: /favicon.ico
+[Mon Sep 10 17:07:28 2018] 127.0.0.1:57682 [200]: /css/modal.css
+[Mon Sep 10 17:07:28 2018] 127.0.0.1:57688 [200]: /js/app.js
+[Mon Sep 10 17:07:28 2018] 127.0.0.1:57690 [200]: /css/app.css
+[Mon Sep 10 17:07:28 2018] 127.0.0.1:57692 [200]: /images/1536131224.png
+[Mon Sep 10 17:07:29 2018] 127.0.0.1:57694 [200]: /images/1536131295.png
+[Mon Sep 10 17:07:29 2018] 127.0.0.1:57696 [200]: /images/1536131428.png
+[Mon Sep 10 17:07:29 2018] 127.0.0.1:57698 [200]: /images/1536131585.png
+[Mon Sep 10 17:07:29 2018] 127.0.0.1:57702 [200]: /favicon.ico
+[Mon Sep 10 17:07:44 2018] 127.0.0.1:57706 [200]: /css/modal.css
+[Mon Sep 10 17:07:44 2018] 127.0.0.1:57710 [200]: /js/app.js
+[Mon Sep 10 17:07:44 2018] 127.0.0.1:57712 [200]: /css/app.css
+[Mon Sep 10 17:07:44 2018] 127.0.0.1:57714 [200]: /images/1536131224.png
+[Mon Sep 10 17:07:44 2018] 127.0.0.1:57716 [200]: /images/1536131295.png
+[Mon Sep 10 17:07:44 2018] 127.0.0.1:57718 [200]: /images/1536131428.png
+[Mon Sep 10 17:07:44 2018] 127.0.0.1:57720 [200]: /images/1536131585.png
+[Mon Sep 10 17:07:45 2018] 127.0.0.1:57722 [200]: /favicon.ico
+[Mon Sep 10 17:07:49 2018] 127.0.0.1:57726 [200]: /favicon.ico
+[Mon Sep 10 17:09:10 2018] 127.0.0.1:57742 [200]: /favicon.ico
+[Mon Sep 10 17:09:11 2018] 127.0.0.1:57750 [200]: /css/modal.css
+[Mon Sep 10 17:09:11 2018] 127.0.0.1:57754 [200]: /js/app.js
+[Mon Sep 10 17:09:11 2018] 127.0.0.1:57756 [200]: /css/app.css
+[Mon Sep 10 17:09:11 2018] 127.0.0.1:57758 [200]: /images/1536131224.png
+[Mon Sep 10 17:09:11 2018] 127.0.0.1:57760 [200]: /images/1536131295.png
+[Mon Sep 10 17:09:11 2018] 127.0.0.1:57762 [200]: /images/1536131428.png
+[Mon Sep 10 17:09:11 2018] 127.0.0.1:57764 [200]: /images/1536131585.png
+[Mon Sep 10 17:09:11 2018] 127.0.0.1:57766 [200]: /favicon.ico
+[Mon Sep 10 17:09:12 2018] 127.0.0.1:57776 [200]: /css/modal.css
+[Mon Sep 10 17:09:12 2018] 127.0.0.1:57780 [200]: /css/app.css
+[Mon Sep 10 17:09:12 2018] 127.0.0.1:57778 [200]: /js/app.js
+[Mon Sep 10 17:09:12 2018] 127.0.0.1:57782 [200]: /images/1536131295.png
+[Mon Sep 10 17:09:12 2018] 127.0.0.1:57784 [200]: /images/1536131428.png
+[Mon Sep 10 17:09:12 2018] 127.0.0.1:57786 [200]: /images/1536131585.png
+[Mon Sep 10 17:09:13 2018] 127.0.0.1:57788 [200]: /favicon.ico
+[Mon Sep 10 17:09:55 2018] 127.0.0.1:57806 [200]: /css/modal.css
+[Mon Sep 10 17:09:55 2018] 127.0.0.1:57812 [200]: /js/app.js
+[Mon Sep 10 17:09:55 2018] 127.0.0.1:57814 [200]: /css/app.css
+[Mon Sep 10 17:09:55 2018] 127.0.0.1:57816 [200]: /images/1536131295.png
+[Mon Sep 10 17:09:55 2018] 127.0.0.1:57818 [200]: /images/1536131428.png
+[Mon Sep 10 17:09:55 2018] 127.0.0.1:57820 [200]: /images/1536131585.png
+[Mon Sep 10 17:09:56 2018] 127.0.0.1:57824 [200]: /favicon.ico
+[Mon Sep 10 17:10:35 2018] 127.0.0.1:57832 [200]: /css/modal.css
+[Mon Sep 10 17:10:35 2018] 127.0.0.1:57838 [200]: /js/app.js
+[Mon Sep 10 17:10:35 2018] 127.0.0.1:57840 [200]: /css/app.css
+[Mon Sep 10 17:10:35 2018] 127.0.0.1:57842 [200]: /images/1536131295.png
+[Mon Sep 10 17:10:35 2018] 127.0.0.1:57844 [200]: /images/1536131428.png
+[Mon Sep 10 17:10:35 2018] 127.0.0.1:57846 [200]: /images/1536131585.png
+[Mon Sep 10 17:10:36 2018] 127.0.0.1:57848 [200]: /favicon.ico
+[Mon Sep 10 17:10:38 2018] 127.0.0.1:57852 [200]: /favicon.ico
+[Mon Sep 10 17:23:11 2018] 127.0.0.1:58110 [200]: /favicon.ico
+[Mon Sep 10 17:23:13 2018] 127.0.0.1:58118 [200]: /css/modal.css
+[Mon Sep 10 17:23:13 2018] 127.0.0.1:58122 [200]: /js/app.js
+[Mon Sep 10 17:23:13 2018] 127.0.0.1:58124 [200]: /css/app.css
+[Mon Sep 10 17:23:13 2018] 127.0.0.1:58126 [200]: /images/1536131295.png
+[Mon Sep 10 17:23:13 2018] 127.0.0.1:58128 [200]: /images/1536131428.png
+[Mon Sep 10 17:23:13 2018] 127.0.0.1:58130 [200]: /images/1536131585.png
+[Mon Sep 10 17:23:13 2018] 127.0.0.1:58132 [200]: /favicon.ico
+[Mon Sep 10 17:23:15 2018] 127.0.0.1:58136 [200]: /favicon.ico
+[Mon Sep 10 17:25:10 2018] 127.0.0.1:58174 [200]: /favicon.ico
+[Mon Sep 10 17:25:11 2018] 127.0.0.1:58182 [200]: /css/modal.css
+[Mon Sep 10 17:25:11 2018] 127.0.0.1:58186 [200]: /js/app.js
+[Mon Sep 10 17:25:11 2018] 127.0.0.1:58188 [200]: /css/app.css
+[Mon Sep 10 17:25:11 2018] 127.0.0.1:58190 [200]: /images/1536131295.png
+[Mon Sep 10 17:25:11 2018] 127.0.0.1:58192 [200]: /images/1536131428.png
+[Mon Sep 10 17:25:11 2018] 127.0.0.1:58194 [200]: /images/1536131585.png
+[Mon Sep 10 17:25:11 2018] 127.0.0.1:58196 [200]: /favicon.ico
+[Mon Sep 10 17:25:15 2018] 127.0.0.1:58206 [200]: /css/modal.css
+[Mon Sep 10 17:25:15 2018] 127.0.0.1:58208 [200]: /js/app.js
+[Mon Sep 10 17:25:15 2018] 127.0.0.1:58210 [200]: /css/app.css
+[Mon Sep 10 17:25:15 2018] 127.0.0.1:58212 [200]: /images/1536131295.png
+[Mon Sep 10 17:25:15 2018] 127.0.0.1:58214 [200]: /images/1536131428.png
+[Mon Sep 10 17:25:15 2018] 127.0.0.1:58216 [200]: /favicon.ico
+[Mon Sep 10 17:31:37 2018] 127.0.0.1:58338 [200]: /css/modal.css
+[Mon Sep 10 17:31:37 2018] 127.0.0.1:58344 [200]: /js/app.js
+[Mon Sep 10 17:31:37 2018] 127.0.0.1:58346 [200]: /css/app.css
+[Mon Sep 10 17:31:37 2018] 127.0.0.1:58348 [200]: /images/1536131295.png
+[Mon Sep 10 17:31:37 2018] 127.0.0.1:58350 [200]: /images/1536131428.png
+[Mon Sep 10 17:31:38 2018] 127.0.0.1:58354 [200]: /favicon.ico
+[Mon Sep 10 17:31:39 2018] 127.0.0.1:58364 [200]: /css/modal.css
+[Mon Sep 10 17:31:39 2018] 127.0.0.1:58366 [200]: /js/app.js
+[Mon Sep 10 17:31:39 2018] 127.0.0.1:58368 [200]: /css/app.css
+[Mon Sep 10 17:31:39 2018] 127.0.0.1:58370 [200]: /images/1536131295.png
+[Mon Sep 10 17:31:39 2018] 127.0.0.1:58372 [200]: /favicon.ico
+[Mon Sep 10 17:31:59 2018] 127.0.0.1:58378 [200]: /css/modal.css
+[Mon Sep 10 17:31:59 2018] 127.0.0.1:58384 [200]: /js/app.js
+[Mon Sep 10 17:31:59 2018] 127.0.0.1:58386 [200]: /css/app.css
+[Mon Sep 10 17:31:59 2018] 127.0.0.1:58388 [200]: /images/1536131295.png
+[Mon Sep 10 17:31:59 2018] 127.0.0.1:58392 [200]: /favicon.ico
+[Mon Sep 10 17:32:00 2018] 127.0.0.1:58396 [200]: /favicon.ico
+[Mon Sep 10 17:32:19 2018] 127.0.0.1:58402 [200]: /favicon.ico
+[Mon Sep 10 17:32:21 2018] 127.0.0.1:58410 [200]: /css/modal.css
+[Mon Sep 10 17:32:21 2018] 127.0.0.1:58414 [200]: /js/app.js
+[Mon Sep 10 17:32:21 2018] 127.0.0.1:58416 [200]: /css/app.css
+[Mon Sep 10 17:32:21 2018] 127.0.0.1:58418 [200]: /images/1536131295.png
+[Mon Sep 10 17:32:21 2018] 127.0.0.1:58420 [200]: /favicon.ico
+[Mon Sep 10 17:32:22 2018] 127.0.0.1:58424 [200]: /favicon.ico
+[Mon Sep 10 17:32:37 2018] 127.0.0.1:58428 [200]: /favicon.ico
+[Mon Sep 10 17:32:38 2018] 127.0.0.1:58436 [200]: /css/modal.css
+[Mon Sep 10 17:32:38 2018] 127.0.0.1:58440 [200]: /js/app.js
+[Mon Sep 10 17:32:38 2018] 127.0.0.1:58442 [200]: /css/app.css
+[Mon Sep 10 17:32:38 2018] 127.0.0.1:58444 [200]: /images/1536131295.png
+[Mon Sep 10 17:32:38 2018] 127.0.0.1:58446 [200]: /favicon.ico
+[Mon Sep 10 17:32:40 2018] 127.0.0.1:58450 [200]: /css/modal.css
+[Mon Sep 10 17:32:40 2018] 127.0.0.1:58454 [200]: /js/app.js
+[Mon Sep 10 17:32:40 2018] 127.0.0.1:58456 [200]: /css/app.css
+[Mon Sep 10 17:32:40 2018] 127.0.0.1:58458 [200]: /images/1536131295.png
+[Mon Sep 10 17:32:40 2018] 127.0.0.1:58460 [200]: /favicon.ico
+[Mon Sep 10 17:32:41 2018] 127.0.0.1:58470 [200]: /css/modal.css
+[Mon Sep 10 17:32:41 2018] 127.0.0.1:58472 [200]: /js/app.js
+[Mon Sep 10 17:32:41 2018] 127.0.0.1:58474 [200]: /css/app.css
+[Mon Sep 10 17:32:41 2018] 127.0.0.1:58476 [200]: /favicon.ico
+[Mon Sep 10 17:33:42 2018] 127.0.0.1:58486 [200]: /js/app.js
+[Mon Sep 10 17:33:42 2018] 127.0.0.1:58490 [200]: /css/app.css
+[Mon Sep 10 17:33:42 2018] 127.0.0.1:58492 [200]: /favicon.ico
+[Mon Sep 10 17:33:43 2018] 127.0.0.1:58496 [200]: /js/app.js
+[Mon Sep 10 17:33:43 2018] 127.0.0.1:58502 [200]: /css/app.css
+[Mon Sep 10 17:33:43 2018] 127.0.0.1:58506 [200]: /favicon.ico
+[Mon Sep 10 17:34:18 2018] 127.0.0.1:58528 [200]: /js/app.js
+[Mon Sep 10 17:34:18 2018] 127.0.0.1:58530 [200]: /css/app.css
+[Mon Sep 10 17:34:18 2018] 127.0.0.1:58532 [200]: /favicon.ico
+[Mon Sep 10 17:36:36 2018] 127.0.0.1:58736 [200]: /favicon.ico
+[Mon Sep 10 17:37:20 2018] 127.0.0.1:58998 [200]: /favicon.ico
+[Mon Sep 10 17:39:08 2018] 127.0.0.1:59290 [200]: /favicon.ico
+[Mon Sep 10 17:41:14 2018] 127.0.0.1:59484 [200]: /favicon.ico
+[Mon Sep 10 17:41:15 2018] 127.0.0.1:59490 [200]: /js/app.js
+[Mon Sep 10 17:41:15 2018] 127.0.0.1:59496 [200]: /css/app.css
+[Mon Sep 10 17:41:16 2018] 127.0.0.1:59500 [200]: /favicon.ico
+[Mon Sep 10 17:41:32 2018] 127.0.0.1:59528 [200]: /js/app.js
+[Mon Sep 10 17:41:32 2018] 127.0.0.1:59530 [200]: /css/app.css
+[Mon Sep 10 17:41:32 2018] 127.0.0.1:59532 [200]: /favicon.ico
+[Mon Sep 10 17:42:19 2018] 127.0.0.1:59594 [200]: /js/app.js
+[Mon Sep 10 17:42:19 2018] 127.0.0.1:59596 [200]: /css/app.css
+[Mon Sep 10 17:42:19 2018] 127.0.0.1:59598 [200]: /favicon.ico
+[Mon Sep 10 17:42:36 2018] 127.0.0.1:59616 [200]: /js/app.js
+[Mon Sep 10 17:42:36 2018] 127.0.0.1:59622 [200]: /css/app.css
+[Mon Sep 10 17:42:36 2018] 127.0.0.1:59626 [200]: /favicon.ico
+[Mon Sep 10 17:42:37 2018] 127.0.0.1:59630 [200]: /js/app.js
+[Mon Sep 10 17:42:37 2018] 127.0.0.1:59634 [200]: /css/app.css
+[Mon Sep 10 17:42:37 2018] 127.0.0.1:59638 [200]: /favicon.ico
+[Mon Sep 10 17:42:39 2018] 127.0.0.1:59646 [200]: /css/customcss.css
+[Mon Sep 10 17:42:39 2018] 127.0.0.1:59648 [200]: /favicon.ico
+[Mon Sep 10 17:42:44 2018] 127.0.0.1:59660 [200]: /js/app.js
+[Mon Sep 10 17:42:44 2018] 127.0.0.1:59662 [200]: /css/app.css
+[Mon Sep 10 17:42:45 2018] 127.0.0.1:59664 [200]: /favicon.ico
+[Mon Sep 10 17:42:47 2018] 127.0.0.1:59678 [200]: /js/app.js
+[Mon Sep 10 17:42:47 2018] 127.0.0.1:59680 [200]: /css/app.css
+[Mon Sep 10 17:42:47 2018] 127.0.0.1:59684 [200]: /favicon.ico
+[Mon Sep 10 17:42:48 2018] 127.0.0.1:59688 [200]: /css/modal.css
+[Mon Sep 10 17:42:48 2018] 127.0.0.1:59692 [200]: /js/app.js
+[Mon Sep 10 17:42:48 2018] 127.0.0.1:59694 [200]: /css/app.css
+[Mon Sep 10 17:42:48 2018] 127.0.0.1:59696 [200]: /images/1536580636.png
+[Mon Sep 10 17:42:48 2018] 127.0.0.1:59698 [200]: /favicon.ico
+[Mon Sep 10 17:43:23 2018] 127.0.0.1:59730 [200]: /css/modal.css
+[Mon Sep 10 17:43:23 2018] 127.0.0.1:59736 [200]: /js/app.js
+[Mon Sep 10 17:43:23 2018] 127.0.0.1:59738 [200]: /css/app.css
+[Mon Sep 10 17:43:23 2018] 127.0.0.1:59740 [200]: /images/1536580636.png
+[Mon Sep 10 17:43:24 2018] 127.0.0.1:59744 [200]: /favicon.ico
+[Mon Sep 10 17:43:25 2018] 127.0.0.1:59756 [200]: /css/modal.css
+[Mon Sep 10 17:43:25 2018] 127.0.0.1:59758 [200]: /js/app.js
+[Mon Sep 10 17:43:25 2018] 127.0.0.1:59760 [200]: /css/app.css
+[Mon Sep 10 17:43:25 2018] 127.0.0.1:59762 [200]: /images/1536580636.png
+[Mon Sep 10 17:43:25 2018] 127.0.0.1:59764 [200]: /favicon.ico
+[Mon Sep 10 17:43:40 2018] 127.0.0.1:59780 [200]: /css/modal.css
+[Mon Sep 10 17:43:40 2018] 127.0.0.1:59786 [200]: /js/app.js
+[Mon Sep 10 17:43:40 2018] 127.0.0.1:59788 [200]: /css/app.css
+[Mon Sep 10 17:43:40 2018] 127.0.0.1:59790 [200]: /images/1536580636.png
+[Mon Sep 10 17:43:40 2018] 127.0.0.1:59794 [200]: /favicon.ico
+[Mon Sep 10 17:43:41 2018] 127.0.0.1:59798 [200]: /favicon.ico
+[Mon Sep 10 17:43:50 2018] 127.0.0.1:59810 [200]: /favicon.ico
+[Mon Sep 10 17:43:52 2018] 127.0.0.1:59816 [200]: /css/modal.css
+[Mon Sep 10 17:43:52 2018] 127.0.0.1:59822 [200]: /js/app.js
+[Mon Sep 10 17:43:52 2018] 127.0.0.1:59824 [200]: /css/app.css
+[Mon Sep 10 17:43:52 2018] 127.0.0.1:59826 [200]: /images/1536580636.png
+[Mon Sep 10 17:43:52 2018] 127.0.0.1:59830 [200]: /favicon.ico
+[Mon Sep 10 17:44:55 2018] 127.0.0.1:59886 [200]: /css/modal.css
+[Mon Sep 10 17:44:55 2018] 127.0.0.1:59892 [200]: /js/app.js
+[Mon Sep 10 17:44:55 2018] 127.0.0.1:59894 [200]: /css/app.css
+[Mon Sep 10 17:44:55 2018] 127.0.0.1:59896 [200]: /images/1536580636.png
+[Mon Sep 10 17:44:56 2018] 127.0.0.1:59900 [200]: /favicon.ico
+[Mon Sep 10 17:44:56 2018] 127.0.0.1:59904 [200]: /favicon.ico
+[Mon Sep 10 17:44:59 2018] 127.0.0.1:59910 [200]: /favicon.ico
+[Mon Sep 10 17:45:00 2018] 127.0.0.1:59914 [200]: /css/modal.css
+[Mon Sep 10 17:45:00 2018] 127.0.0.1:59918 [200]: /js/app.js
+[Mon Sep 10 17:45:00 2018] 127.0.0.1:59920 [200]: /css/app.css
+[Mon Sep 10 17:45:00 2018] 127.0.0.1:59922 [200]: /images/1536580636.png
+[Mon Sep 10 17:45:00 2018] 127.0.0.1:59924 [200]: /favicon.ico
+[Mon Sep 10 17:45:07 2018] 127.0.0.1:59932 [200]: /css/modal.css
+[Mon Sep 10 17:45:07 2018] 127.0.0.1:59938 [200]: /js/app.js
+[Mon Sep 10 17:45:07 2018] 127.0.0.1:59940 [200]: /css/app.css
+[Mon Sep 10 17:45:07 2018] 127.0.0.1:59942 [200]: /images/1536580636.png
+[Mon Sep 10 17:45:07 2018] 127.0.0.1:59944 [200]: /favicon.ico
+[Mon Sep 10 17:45:08 2018] 127.0.0.1:59956 [200]: /css/modal.css
+[Mon Sep 10 17:45:08 2018] 127.0.0.1:59958 [200]: /js/app.js
+[Mon Sep 10 17:45:08 2018] 127.0.0.1:59960 [200]: /css/app.css
+[Mon Sep 10 17:45:08 2018] 127.0.0.1:59964 [200]: /favicon.ico
+[Mon Sep 10 17:45:51 2018] 127.0.0.1:60010 [200]: /css/modal.css
+[Mon Sep 10 17:45:51 2018] 127.0.0.1:60016 [200]: /js/app.js
+[Mon Sep 10 17:45:51 2018] 127.0.0.1:60018 [200]: /css/app.css
+[Mon Sep 10 17:45:52 2018] 127.0.0.1:60020 [200]: /favicon.ico
+[Mon Sep 10 17:46:02 2018] 127.0.0.1:60038 [200]: /js/app.js
+[Mon Sep 10 17:46:02 2018] 127.0.0.1:60042 [200]: /css/app.css
+[Mon Sep 10 17:46:02 2018] 127.0.0.1:60044 [200]: /favicon.ico
+[Mon Sep 10 17:46:03 2018] 127.0.0.1:60048 [200]: /js/app.js
+[Mon Sep 10 17:46:03 2018] 127.0.0.1:60054 [200]: /css/app.css
+[Mon Sep 10 17:46:03 2018] 127.0.0.1:60056 [200]: /favicon.ico
+[Mon Sep 10 17:46:11 2018] 127.0.0.1:60074 [200]: /js/app.js
+[Mon Sep 10 17:46:11 2018] 127.0.0.1:60076 [200]: /css/app.css
+[Mon Sep 10 17:46:11 2018] 127.0.0.1:60078 [200]: /favicon.ico
+^C
+]0;sagunraj@Inspiron3542: ~/LaravelSites/CollegeProject[01;32msagunraj@Inspiron3542[00m:[01;34m~/LaravelSites/CollegeProject[00m$ pu[K[Kphp artisan migrate
+[32mNothing to migrate.[39m
+]0;sagunraj@Inspiron3542: ~/LaravelSites/CollegeProject[01;32msagunraj@Inspiron3542[00m:[01;34m~/LaravelSites/CollegeProject[00m$ php artisan migrate
+[32mNothing to migrate.[39m
+]0;sagunraj@Inspiron3542: ~/LaravelSites/CollegeProject[01;32msagunraj@Inspiron3542[00m:[01;34m~/LaravelSites/CollegeProject[00m$ php artisan migrate[2Pserve
+[32mLaravel development server started:[39m <http://127.0.0.1:8000>
+[Mon Sep 10 17:52:28 2018] 127.0.0.1:60422 [200]: /js/app.js
+[Mon Sep 10 17:52:28 2018] 127.0.0.1:60428 [200]: /css/app.css
+[Mon Sep 10 17:52:28 2018] 127.0.0.1:60432 [200]: /favicon.ico
+[Mon Sep 10 17:52:34 2018] 127.0.0.1:60448 [200]: /js/app.js
+[Mon Sep 10 17:52:34 2018] 127.0.0.1:60450 [200]: /css/app.css
+[Mon Sep 10 17:52:34 2018] 127.0.0.1:60452 [200]: /favicon.ico
+[Mon Sep 10 18:00:07 2018] 127.0.0.1:60862 [200]: /js/app.js
+[Mon Sep 10 18:00:07 2018] 127.0.0.1:60868 [200]: /css/app.css
+[Mon Sep 10 18:00:07 2018] 127.0.0.1:60872 [200]: /favicon.ico
+[Mon Sep 10 18:00:09 2018] 127.0.0.1:60878 [200]: /js/app.js
+[Mon Sep 10 18:00:09 2018] 127.0.0.1:60882 [200]: /css/app.css
+[Mon Sep 10 18:00:10 2018] 127.0.0.1:60884 [200]: /favicon.ico
+[Mon Sep 10 18:00:16 2018] 127.0.0.1:60900 [200]: /css/customcss.css
+[Mon Sep 10 18:00:17 2018] 127.0.0.1:60902 [200]: /favicon.ico
+[Mon Sep 10 18:00:21 2018] 127.0.0.1:60914 [200]: /js/app.js
+[Mon Sep 10 18:00:21 2018] 127.0.0.1:60916 [200]: /css/app.css
+[Mon Sep 10 18:00:21 2018] 127.0.0.1:60920 [200]: /favicon.ico
+[Mon Sep 10 18:00:26 2018] 127.0.0.1:60930 [200]: /js/app.js
+[Mon Sep 10 18:00:28 2018] 127.0.0.1:60934 [200]: /css/app.css
+[Mon Sep 10 18:00:28 2018] 127.0.0.1:60936 [200]: /favicon.ico
+[Mon Sep 10 18:00:30 2018] 127.0.0.1:60940 [200]: /css/customcss.css
+[Mon Sep 10 18:00:31 2018] 127.0.0.1:60942 [200]: /favicon.ico
+[Mon Sep 10 18:00:33 2018] 127.0.0.1:60948 [200]: /favicon.ico
+^C
+]0;sagunraj@Inspiron3542: ~/LaravelSites/CollegeProject[01;32msagunraj@Inspiron3542[00m:[01;34m~/LaravelSites/CollegeProject[00m$ php artisan migrate:rollback
+[33mRolling back:[39m 2018_08_22_085100_create_word_indices_table
+[32mRolled back:[39m  2018_08_22_085100_create_word_indices_table
+[33mRolling back:[39m 2018_05_16_122912_create_image_models_table
+[32mRolled back:[39m  2018_05_16_122912_create_image_models_table
+[33mRolling back:[39m 2014_10_12_100000_create_password_resets_table
+[32mRolled back:[39m  2014_10_12_100000_create_password_resets_table
+[33mRolling back:[39m 2014_10_12_000000_create_users_table
+[32mRolled back:[39m  2014_10_12_000000_create_users_table
+]0;sagunraj@Inspiron3542: ~/LaravelSites/CollegeProject[01;32msagunraj@Inspiron3542[00m:[01;34m~/LaravelSites/CollegeProject[00m$ php aritsn[K[K[K[Ktisan migrate
+[33mMigrating:[39m 2014_10_12_000000_create_users_table
+[32mMigrated:[39m  2014_10_12_000000_create_users_table
+[33mMigrating:[39m 2014_10_12_100000_create_password_resets_table
+[32mMigrated:[39m  2014_10_12_100000_create_password_resets_table
+[33mMigrating:[39m 2018_05_16_122912_create_image_models_table
+[32mMigrated:[39m  2018_05_16_122912_create_image_models_table
+[33mMigrating:[39m 2018_08_22_085100_create_word_indices_table
+[32mMigrated:[39m  2018_08_22_085100_create_word_indices_table
+]0;sagunraj@Inspiron3542: ~/LaravelSites/CollegeProject[01;32msagunraj@Inspiron3542[00m:[01;34m~/LaravelSites/CollegeProject[00m$ php artisan migrate:rollbackserve[K
+[32mLaravel development server started:[39m <http://127.0.0.1:8000>
+[Mon Sep 10 18:11:21 2018] 127.0.0.1:33128 [200]: /css/customcss.css
+[Mon Sep 10 18:11:21 2018] 127.0.0.1:33134 [200]: /favicon.ico
+[Mon Sep 10 18:11:24 2018] 127.0.0.1:33138 [200]: /js/app.js
+[Mon Sep 10 18:11:25 2018] 127.0.0.1:33140 [200]: /css/app.css
+[Mon Sep 10 18:11:25 2018] 127.0.0.1:33142 [200]: /favicon.ico
+[Mon Sep 10 18:11:28 2018] 127.0.0.1:33150 [200]: /js/app.js
+[Mon Sep 10 18:11:28 2018] 127.0.0.1:33152 [200]: /css/app.css
+[Mon Sep 10 18:11:28 2018] 127.0.0.1:33154 [200]: /favicon.ico
+[Mon Sep 10 18:11:31 2018] 127.0.0.1:33158 [200]: /js/app.js
+[Mon Sep 10 18:11:31 2018] 127.0.0.1:33160 [200]: /css/app.css
+[Mon Sep 10 18:11:31 2018] 127.0.0.1:33162 [200]: /favicon.ico
+[Mon Sep 10 18:11:41 2018] 127.0.0.1:33176 [200]: /js/app.js
+[Mon Sep 10 18:11:41 2018] 127.0.0.1:33178 [200]: /css/app.css
+[Mon Sep 10 18:11:41 2018] 127.0.0.1:33182 [200]: /favicon.ico
+[Mon Sep 10 18:11:43 2018] 127.0.0.1:33186 [200]: /js/app.js
+[Mon Sep 10 18:11:43 2018] 127.0.0.1:33190 [200]: /css/app.css
+[Mon Sep 10 18:11:43 2018] 127.0.0.1:33192 [200]: /favicon.ico
+[Mon Sep 10 18:11:51 2018] 127.0.0.1:33196 [200]: /favicon.ico
+[Mon Sep 10 18:14:50 2018] 127.0.0.1:33220 [200]: /js/app.js
+[Mon Sep 10 18:14:50 2018] 127.0.0.1:33226 [200]: /css/app.css
+[Mon Sep 10 18:14:51 2018] 127.0.0.1:33228 [200]: /favicon.ico
+[Mon Sep 10 18:14:59 2018] 127.0.0.1:33234 [200]: /favicon.ico
+[Mon Sep 10 18:15:10 2018] 127.0.0.1:33242 [200]: /js/app.js
+[Mon Sep 10 18:15:10 2018] 127.0.0.1:33248 [200]: /css/app.css
+[Mon Sep 10 18:15:11 2018] 127.0.0.1:33252 [200]: /favicon.ico
+[Mon Sep 10 18:15:16 2018] 127.0.0.1:33266 [200]: /js/app.js
+[Mon Sep 10 18:15:16 2018] 127.0.0.1:33268 [200]: /css/app.css
+[Mon Sep 10 18:15:16 2018] 127.0.0.1:33270 [200]: /favicon.ico
+[Mon Sep 10 18:17:49 2018] 127.0.0.1:33294 [200]: /js/app.js
+[Mon Sep 10 18:17:49 2018] 127.0.0.1:33300 [200]: /css/app.css
+[Mon Sep 10 18:17:49 2018] 127.0.0.1:33304 [200]: /favicon.ico
+[Mon Sep 10 18:17:56 2018] 127.0.0.1:33316 [200]: /js/app.js
+[Mon Sep 10 18:17:56 2018] 127.0.0.1:33318 [200]: /css/app.css
+[Mon Sep 10 18:17:57 2018] 127.0.0.1:33320 [200]: /favicon.ico
+[Mon Sep 10 18:18:34 2018] 127.0.0.1:33328 [200]: /js/app.js
+[Mon Sep 10 18:18:34 2018] 127.0.0.1:33334 [200]: /css/app.css
+[Mon Sep 10 18:18:34 2018] 127.0.0.1:33338 [200]: /favicon.ico
+[Mon Sep 10 18:18:42 2018] 127.0.0.1:33352 [200]: /js/app.js
+[Mon Sep 10 18:18:42 2018] 127.0.0.1:33354 [200]: /css/app.css
+[Mon Sep 10 18:18:42 2018] 127.0.0.1:33356 [200]: /favicon.ico
+[Mon Sep 10 18:19:12 2018] 127.0.0.1:33366 [200]: /js/app.js
+[Mon Sep 10 18:19:12 2018] 127.0.0.1:33372 [200]: /css/app.css
+[Mon Sep 10 18:19:13 2018] 127.0.0.1:33376 [200]: /favicon.ico
+[Mon Sep 10 18:19:28 2018] 127.0.0.1:33390 [200]: /js/app.js
+[Mon Sep 10 18:19:28 2018] 127.0.0.1:33392 [200]: /css/app.css
+[Mon Sep 10 18:19:29 2018] 127.0.0.1:33394 [200]: /favicon.ico
+[Mon Sep 10 18:22:37 2018] 127.0.0.1:33428 [200]: /js/app.js
+[Mon Sep 10 18:22:37 2018] 127.0.0.1:33434 [200]: /css/app.css
+[Mon Sep 10 18:22:38 2018] 127.0.0.1:33438 [200]: /favicon.ico
+[Mon Sep 10 18:22:39 2018] 127.0.0.1:33442 [200]: /js/app.js
+[Mon Sep 10 18:22:39 2018] 127.0.0.1:33446 [200]: /css/app.css
+[Mon Sep 10 18:22:39 2018] 127.0.0.1:33448 [200]: /images/1536582596.png
+[Mon Sep 10 18:22:39 2018] 127.0.0.1:33450 [200]: /images/1536582614.png
+[Mon Sep 10 18:22:39 2018] 127.0.0.1:33452 [200]: /images/1536582774.png
+[Mon Sep 10 18:22:39 2018] 127.0.0.1:33454 [200]: /images/1536582818.png
+[Mon Sep 10 18:22:39 2018] 127.0.0.1:33456 [200]: /favicon.ico
+[Mon Sep 10 18:22:43 2018] 127.0.0.1:33460 [200]: /favicon.ico
+[Mon Sep 10 18:24:29 2018] 127.0.0.1:33474 [200]: /favicon.ico
+[Mon Sep 10 18:24:31 2018] 127.0.0.1:33482 [200]: /js/app.js
+[Mon Sep 10 18:24:31 2018] 127.0.0.1:33486 [200]: /css/app.css
+[Mon Sep 10 18:24:31 2018] 127.0.0.1:33488 [200]: /images/1536582596.png
+[Mon Sep 10 18:24:31 2018] 127.0.0.1:33490 [200]: /images/1536582614.png
+[Mon Sep 10 18:24:31 2018] 127.0.0.1:33492 [200]: /images/1536582774.png
+[Mon Sep 10 18:24:31 2018] 127.0.0.1:33494 [200]: /images/1536582818.png
+[Mon Sep 10 18:24:32 2018] 127.0.0.1:33496 [200]: /favicon.ico
+[Mon Sep 10 18:24:34 2018] 127.0.0.1:33506 [200]: /js/app.js
+[Mon Sep 10 18:24:34 2018] 127.0.0.1:33508 [200]: /css/app.css
+[Mon Sep 10 18:24:34 2018] 127.0.0.1:33512 [200]: /images/1536582614.png
+[Mon Sep 10 18:24:34 2018] 127.0.0.1:33514 [200]: /images/1536582774.png
+[Mon Sep 10 18:24:34 2018] 127.0.0.1:33516 [200]: /images/1536582818.png
+[Mon Sep 10 18:24:34 2018] 127.0.0.1:33520 [200]: /favicon.ico
+[Mon Sep 10 18:24:51 2018] 127.0.0.1:33526 [200]: /js/app.js
+[Mon Sep 10 18:24:51 2018] 127.0.0.1:33532 [200]: /css/app.css
+[Mon Sep 10 18:24:51 2018] 127.0.0.1:33536 [200]: /images/1536582614.png
+[Mon Sep 10 18:24:51 2018] 127.0.0.1:33538 [200]: /images/1536582774.png
+[Mon Sep 10 18:24:51 2018] 127.0.0.1:33540 [200]: /images/1536582818.png
+[Mon Sep 10 18:24:51 2018] 127.0.0.1:33546 [200]: /favicon.ico
+[Mon Sep 10 18:24:54 2018] 127.0.0.1:33556 [200]: /js/app.js
+[Mon Sep 10 18:24:54 2018] 127.0.0.1:33558 [200]: /css/app.css
+[Mon Sep 10 18:24:54 2018] 127.0.0.1:33562 [200]: /images/1536582774.png
+[Mon Sep 10 18:24:54 2018] 127.0.0.1:33564 [200]: /images/1536582818.png
+[Mon Sep 10 18:24:55 2018] 127.0.0.1:33568 [200]: /favicon.ico
+[Mon Sep 10 18:24:57 2018] 127.0.0.1:33580 [200]: /js/app.js
+[Mon Sep 10 18:24:57 2018] 127.0.0.1:33582 [200]: /css/app.css
+[Mon Sep 10 18:24:57 2018] 127.0.0.1:33584 [200]: /images/1536582774.png
+[Mon Sep 10 18:24:57 2018] 127.0.0.1:33586 [200]: /images/1536582818.png
+[Mon Sep 10 18:24:57 2018] 127.0.0.1:33588 [200]: /favicon.ico
+^C
+]0;sagunraj@Inspiron3542: ~/LaravelSites/CollegeProject[01;32msagunraj@Inspiron3542[00m:[01;34m~/LaravelSites/CollegeProject[00m$ php artisan migrate:rob[Kllback
+[33mRolling back:[39m 2018_08_22_085100_create_word_indices_table
+[32mRolled back:[39m  2018_08_22_085100_create_word_indices_table
+[33mRolling back:[39m 2018_05_16_122912_create_image_models_table
+[32mRolled back:[39m  2018_05_16_122912_create_image_models_table
+[33mRolling back:[39m 2014_10_12_100000_create_password_resets_table
+[32mRolled back:[39m  2014_10_12_100000_create_password_resets_table
+[33mRolling back:[39m 2014_10_12_000000_create_users_table
+[32mRolled back:[39m  2014_10_12_000000_create_users_table
+]0;sagunraj@Inspiron3542: ~/LaravelSites/CollegeProject[01;32msagunraj@Inspiron3542[00m:[01;34m~/LaravelSites/CollegeProject[00m$ php artisan migare[K[K[Krate
+[33mMigrating:[39m 2014_10_12_000000_create_users_table
+[32mMigrated:[39m  2014_10_12_000000_create_users_table
+[33mMigrating:[39m 2014_10_12_100000_create_password_resets_table
+[32mMigrated:[39m  2014_10_12_100000_create_password_resets_table
+[33mMigrating:[39m 2018_05_16_122912_create_image_models_table
+[32mMigrated:[39m  2018_05_16_122912_create_image_models_table
+[33mMigrating:[39m 2018_08_22_085100_create_word_indices_table
+[32mMigrated:[39m  2018_08_22_085100_create_word_indices_table
+]0;sagunraj@Inspiron3542: ~/LaravelSites/CollegeProject[01;32msagunraj@Inspiron3542[00m:[01;34m~/LaravelSites/CollegeProject[00m$ php artisan migrate:rollbackserve[Kmigrate[2Pserve
+[32mLaravel development server started:[39m <http://127.0.0.1:8000>
+[Mon Sep 10 18:25:45 2018] 127.0.0.1:33630 [200]: /css/app.css
+[Mon Sep 10 18:25:45 2018] 127.0.0.1:33628 [200]: /js/app.js
+[Mon Sep 10 18:25:46 2018] 127.0.0.1:33632 [200]: /favicon.ico
+[Mon Sep 10 18:25:48 2018] 127.0.0.1:33636 [200]: /js/app.js
+[Mon Sep 10 18:25:48 2018] 127.0.0.1:33640 [200]: /css/app.css
+[Mon Sep 10 18:25:48 2018] 127.0.0.1:33642 [200]: /favicon.ico
+[Mon Sep 10 18:25:50 2018] 127.0.0.1:33646 [200]: /js/app.js
+[Mon Sep 10 18:25:50 2018] 127.0.0.1:33652 [200]: /css/app.css
+[Mon Sep 10 18:25:50 2018] 127.0.0.1:33656 [200]: /favicon.ico
+[Mon Sep 10 18:26:00 2018] 127.0.0.1:33668 [200]: /js/app.js
+[Mon Sep 10 18:26:00 2018] 127.0.0.1:33670 [200]: /css/app.css
+[Mon Sep 10 18:26:00 2018] 127.0.0.1:33672 [200]: /favicon.ico
+[Mon Sep 10 18:26:01 2018] 127.0.0.1:33676 [200]: /js/app.js
+[Mon Sep 10 18:26:01 2018] 127.0.0.1:33682 [200]: /css/app.css
+[Mon Sep 10 18:26:01 2018] 127.0.0.1:33686 [200]: /favicon.ico
+[Mon Sep 10 18:26:08 2018] 127.0.0.1:33698 [200]: /js/app.js
+[Mon Sep 10 18:26:08 2018] 127.0.0.1:33700 [200]: /css/app.css
+[Mon Sep 10 18:26:09 2018] 127.0.0.1:33702 [200]: /favicon.ico
+[Mon Sep 10 18:26:10 2018] 127.0.0.1:33706 [200]: /js/app.js
+[Mon Sep 10 18:26:10 2018] 127.0.0.1:33710 [200]: /css/app.css
+[Mon Sep 10 18:26:11 2018] 127.0.0.1:33712 [200]: /favicon.ico
+[Mon Sep 10 18:26:13 2018] 127.0.0.1:33716 [200]: /js/app.js
+[Mon Sep 10 18:26:13 2018] 127.0.0.1:33722 [200]: /css/app.css
+[Mon Sep 10 18:26:13 2018] 127.0.0.1:33724 [200]: /images/1536583265.png
+[Mon Sep 10 18:26:13 2018] 127.0.0.1:33728 [200]: /favicon.ico
+[Mon Sep 10 18:26:27 2018] 127.0.0.1:33746 [200]: /js/app.js
+[Mon Sep 10 18:26:27 2018] 127.0.0.1:33748 [200]: /css/app.css
+[Mon Sep 10 18:26:27 2018] 127.0.0.1:33750 [200]: /favicon.ico
+[Mon Sep 10 18:27:43 2018] 127.0.0.1:33760 [200]: /js/app.js
+[Mon Sep 10 18:27:43 2018] 127.0.0.1:33766 [200]: /css/app.css
+[Mon Sep 10 18:27:43 2018] 127.0.0.1:33770 [200]: /favicon.ico
+[Mon Sep 10 18:27:44 2018] 127.0.0.1:33774 [200]: /js/app.js
+[Mon Sep 10 18:27:44 2018] 127.0.0.1:33778 [200]: /css/app.css
+[Mon Sep 10 18:27:44 2018] 127.0.0.1:33780 [200]: /favicon.ico
+[Mon Sep 10 18:28:11 2018] 127.0.0.1:33794 [200]: /js/app.js
+[Mon Sep 10 18:28:11 2018] 127.0.0.1:33796 [200]: /css/app.css
+[Mon Sep 10 18:28:11 2018] 127.0.0.1:33798 [200]: /favicon.ico
+[Mon Sep 10 18:29:01 2018] 127.0.0.1:33810 [200]: /js/app.js
+[Mon Sep 10 18:29:01 2018] 127.0.0.1:33816 [200]: /css/app.css
+[Mon Sep 10 18:29:01 2018] 127.0.0.1:33820 [200]: /favicon.ico
+[Mon Sep 10 18:29:02 2018] 127.0.0.1:33824 [200]: /js/app.js
+[Mon Sep 10 18:29:02 2018] 127.0.0.1:33828 [200]: /css/app.css
+[Mon Sep 10 18:29:02 2018] 127.0.0.1:33830 [200]: /images/1536583371.png
+[Mon Sep 10 18:29:02 2018] 127.0.0.1:33832 [200]: /favicon.ico
+[Mon Sep 10 18:29:32 2018] 127.0.0.1:33848 [200]: /favicon.ico
+[Mon Sep 10 18:29:36 2018] 127.0.0.1:33862 [200]: /css/customcss.css
+[Mon Sep 10 18:29:36 2018] 127.0.0.1:33864 [200]: /favicon.ico
+[Mon Sep 10 18:29:41 2018] 127.0.0.1:33868 [200]: /favicon.ico
+[Mon Sep 10 18:29:44 2018] 127.0.0.1:33874 [200]: /favicon.ico
+[Mon Sep 10 18:30:24 2018] 127.0.0.1:33902 [200]: /favicon.ico
+[Mon Sep 10 18:30:26 2018] 127.0.0.1:33912 [200]: /favicon.ico
+[Mon Sep 10 18:30:38 2018] 127.0.0.1:33920 [200]: /favicon.ico
+[Mon Sep 10 18:30:40 2018] 127.0.0.1:33930 [200]: /favicon.ico
+[Mon Sep 10 18:31:10 2018] 127.0.0.1:33948 [200]: /js/app.js
+[Mon Sep 10 18:31:11 2018] 127.0.0.1:33954 [200]: /js/app.js
+[Mon Sep 10 18:31:12 2018] 127.0.0.1:33958 [200]: /css/app.css
+[Mon Sep 10 18:31:12 2018] 127.0.0.1:33960 [200]: /favicon.ico
+[Mon Sep 10 18:31:13 2018] 127.0.0.1:33962 [200]: /js/app.js
+[Mon Sep 10 18:31:13 2018] 127.0.0.1:33964 [200]: /css/app.css
+[Mon Sep 10 18:31:14 2018] 127.0.0.1:33966 [200]: /favicon.ico
+[Mon Sep 10 18:31:44 2018] 127.0.0.1:33990 [200]: /js/app.js
+[Mon Sep 10 18:31:44 2018] 127.0.0.1:33992 [200]: /css/app.css
+[Mon Sep 10 18:31:45 2018] 127.0.0.1:33994 [200]: /favicon.ico
+[Mon Sep 10 18:31:49 2018] 127.0.0.1:33998 [200]: /css/customcss.css
+[Mon Sep 10 18:31:49 2018] 127.0.0.1:34000 [200]: /favicon.ico
+[Mon Sep 10 18:31:52 2018] 127.0.0.1:34004 [200]: /images/1536583600.png
+[Mon Sep 10 18:31:53 2018] 127.0.0.1:34014 [200]: /favicon.ico
+[Mon Sep 10 18:32:13 2018] 127.0.0.1:34018 [200]: /favicon.ico
+[Mon Sep 10 18:32:36 2018] 127.0.0.1:34032 [200]: /images/1536583371.png
+[Mon Sep 10 18:32:36 2018] 127.0.0.1:34040 [200]: /images/1536583600.png
+[Mon Sep 10 18:32:37 2018] 127.0.0.1:34044 [200]: /favicon.ico
+^C
+]0;sagunraj@Inspiron3542: ~/LaravelSites/CollegeProject[01;32msagunraj@Inspiron3542[00m:[01;34m~/LaravelSites/CollegeProject[00m$ git push origin[K[K[K[K[K[K[K[K[K

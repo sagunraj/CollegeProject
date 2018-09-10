@@ -1,6 +1,6 @@
 @extends('layout')
 @section('title')
-    <title>Search Results for '{!! $queryString !!}'</title>
+    <title>Search Results for '{!! $queryString !!}' - Image Search Engine</title>
     @endsection
 @section('content')
     <h2>Search Results for '{!! $queryString !!}'</h2>

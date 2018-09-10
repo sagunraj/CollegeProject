@@ -7,8 +7,8 @@ use App\ImageModel;
 use App\WordIndex;
 use GuzzleHttp\Client;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Session;
-use Imagick;
 use Intervention\Image\Facades\Image;
 
 class AdminController extends Controller
@@ -25,7 +25,10 @@ class AdminController extends Controller
 
     public function index()
     {
-
+        $images = ImageModel::paginate(9);
+        return view('display', [
+            'images' => $images
+        ]);
     }
 
     /**
@@ -59,7 +62,7 @@ class AdminController extends Controller
 
 
             $request = $client->request('POST', "https://api.ocr.space/parse/image", [
-                'headers' => ['apikey' => '9cbdb738d088957'],
+                'headers' => ['apikey' => '9b0a4be67688957'],
                 'multipart' => [
                     [
                         'name' => 'file',
@@ -75,15 +78,16 @@ class AdminController extends Controller
             $imageModel->text = $response->ParsedResults[0]->ParsedText;
             $textdata = $response->ParsedResults[0]->ParsedText;
             $newtextdata = preg_split("/[\s,]+/", $textdata);
+            $imageModel->save();
 
             for($i=0; $i<=sizeof($newtextdata)-1; $i++){
                     $wordindex = new WordIndex();
+                    $wordindex->image_model_id = $imageModel->id;
                     $wordindex->word = $newtextdata[$i];
                     $wordindex->imagename = $filename;
                     $wordindex->save();
             }
 
-            $imageModel->save();
             Session::flash("uploaded", "Your image has been uploaded and stored.");
             return redirect()->route('admin.upload');
             }
@@ -131,7 +135,20 @@ class AdminController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $image = ImageModel::findorfail($id);
+        $path = public_path("/images/".$image->image);
+
+        $word_indices=WordIndex::where("image_model_id",$id)->get();
+
+        foreach ($word_indices as $word_index)
+            $word_index->delete();
+
+        if(File::exists($path)){
+            File::delete($path);
+        }
+        $image->delete();
+        Session::flash('delete', "Image has been deleted.");
+        return redirect()->route('admin.index');
     }
 
 

@@ -17,6 +17,7 @@ class CreateWordIndicesTable extends Migration
             $table->increments('id');
             $table->string('word');
             $table->string('imagename');
+            $table->integer('image_model_id');
             $table->timestamps();
         });
     }

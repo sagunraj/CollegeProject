@@ -14,7 +14,8 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    <a class="btn btn-primary" href="{!! route('admin.upload') !!}">Upload new image</a>
+                    <a class="btn btn-danger" href="{!! route('admin.index') !!}">View Images</a>
                 </div>
             </div>
         </div>
