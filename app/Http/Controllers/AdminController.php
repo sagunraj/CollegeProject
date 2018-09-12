@@ -75,22 +75,32 @@ class AdminController extends Controller
                 ]);
 
             $response = json_decode($request->getBody());
-            $imageModel->text = $response->ParsedResults[0]->ParsedText;
-            $textdata = $response->ParsedResults[0]->ParsedText;
-            $newtextdata = preg_split("/[\s,]+/", $textdata);
-            $imageModel->save();
+            if($response->ParsedResults[0]->ParsedText!="") {
+                $imageModel->text = $response->ParsedResults[0]->ParsedText;
+                $textdata = $response->ParsedResults[0]->ParsedText;
+                $newtextdata = preg_split("/[\s,]+/", $textdata);
+                $imageModel->save();
 
-            for($i=0; $i<=sizeof($newtextdata)-1; $i++){
-                    $wordindex = new WordIndex();
-                    $wordindex->image_model_id = $imageModel->id;
-                    $wordindex->word = $newtextdata[$i];
-                    $wordindex->imagename = $filename;
-                    $wordindex->save();
+                for ($i = 0; $i <= sizeof($newtextdata) - 1; $i++) {
+                    if ($newtextdata[$i] != "") {
+                        $wordindex = new WordIndex();
+                        $wordindex->image_model_id = $imageModel->id;
+                        $wordindex->word = strtolower($newtextdata[$i]);
+                        $wordindex->imagename = $filename;
+                        $wordindex->save();
+                    }
+                }
+
+                Session::flash("uploaded", "Your image has been uploaded and stored.");
             }
-
-            Session::flash("uploaded", "Your image has been uploaded and stored.");
+            else {
+                Session::flash("uploaded", "Your image wasn't uploaded and stored because we couldn't detect any text.");
+            }
             return redirect()->route('admin.upload');
-            }
+
+        }
+
+
         }
 
     /**

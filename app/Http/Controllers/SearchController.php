@@ -65,31 +65,30 @@ class SearchController extends Controller
         }
 
         $diceResults = array();
-
         $indices = json_decode(WordIndex::all());
-        $count=0;
         for($l=0; $l <= sizeof($newkeywords)-1; $l++) {
             for ($m = 0; $m <= sizeof($indices) - 1; $m++) {
                 $dv = $this->diceCoefficient($newkeywords[$l], $indices[$m]->word);
-                if ($dv >= 0.5) {
-                    $count++;
-                    array_push($diceResults, $indices[$m]->imagename);
+                if ($dv >= 0.60) {
+                    array_push($diceResults, $indices[$m]->imagename."+".$indices[$m]->word);
                 }
             }
         }
 
-        $finalResults = [];
 
+        $finalResults = [];
+        $wordResults = [];
         for($x=0; $x<sizeof($diceResults)-1; $x++){
-            if(!in_array($diceResults[$x], $finalResults)){
-                array_push($finalResults, $diceResults[$x]);
+            array_push($wordResults, substr($diceResults[$x], strpos($diceResults[$x], "+") +1));
+            if(!in_array(strtok($diceResults[$x], "+"), $finalResults)){
+                array_push($finalResults, strtok($diceResults[$x], "+"));
             }
         }
-
         if($finalResults!=null){
         return view('results', [
             'finalResults' => $finalResults,
-            'queryString' => $queryString
+            'queryString' => $queryString,
+            'wordResults' => $wordResults
         ]);}
 
         else{
